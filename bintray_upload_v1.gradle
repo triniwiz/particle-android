@@ -1,5 +1,7 @@
 // lifted from https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle
 // and copied into this repo to maintain a hermetic build
+
+/*
 apply plugin: 'com.jfrog.bintray'
 
 version = libraryVersion
@@ -61,3 +63,5 @@ bintray {
         }
     }
 }
+
+*/

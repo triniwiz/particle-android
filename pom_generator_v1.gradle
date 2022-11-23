@@ -1,5 +1,7 @@
 // lifted from: https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle
 // and copied into this repo to maintain a hermetic build
+
+/*
 apply plugin: 'com.github.dcendents.android-maven'
 
 group = publishedGroupId                               // Maven Group ID for the artifact
@@ -42,3 +44,5 @@ install {
         }
     }
 }
+
+*/

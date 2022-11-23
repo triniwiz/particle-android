@@ -37,11 +37,11 @@ ext {
 
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 15
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 1
         versionName "1.0"
     }
@@ -71,8 +71,9 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
 
-//    implementation project(':cloudsdk')
-    api 'io.particle:cloudsdk:1.0.1'
+    implementation project(':cloudsdk')
+    //api 'io.particle:cloudsdk:1.0.1'
+   // api 'com.github.particle-iot:particle-android:1.0.1'
 
     api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
     api "io.github.microutils:kotlin-logging:1.7.8"

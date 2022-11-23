@@ -99,6 +99,7 @@ class FlowRunnerAccessModel(private val app: Application) : AndroidViewModel(app
 
     fun shutdown() {
         log.info { "shutdown()" }
+        QATool.runSafely()
         QATool.runSafely(
             { systemInterface.shutdown() },
             // have to use the "?" here because we shut down the mesh setup activity in onCreate()
